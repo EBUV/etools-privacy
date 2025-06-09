@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ETools.Placement - Help</title>
+    <style>
+        body {
+            font-family: Segoe UI, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .icon {
+            width: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        ul {
+            margin-top: 0;
+        }
+        .note {
+            background-color: #f8f8f8;
+            border-left: 4px solid #3498db;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ETools.Placement - Help</h1>
+
+    <div class="section">
+        <h2><img src="PlaceBetweenPoints.png" class="icon" alt="">Place Between Two Points</h2>
+        <p>This tool allows you to place a selected family instance at the midpoint between two picked points in the model.</p>
+        <ul>
+            <li>Start the command from the ETools → Placement panel.</li>
+            <li>Select the desired family type in the Revit ribbon or Properties palette.</li>
+            <li>Click on two points in the model. The object will be placed at the exact midpoint.</li>
+            <li>Works with face-based and non-hosted families.</li>
+        </ul>
+        <div class="note">
+            <strong>Note:</strong> The family must be placeable manually and should not require a host if not face-based.
+        </div>
+    </div>
+
+    <div class="section">
+        <h2><img src="PlaceArrayBetweenTwoPoints.png" class="icon" alt="">Place Array Between Two Points</h2>
+        <p>This tool allows you to create a rectangular array of a selected family between two picked points, defining the number of rows and columns.</p>
+        <ul>
+            <li>Start the command from the ETools → Placement panel.</li>
+            <li>Select the desired family type before launching the command.</li>
+            <li>Pick two points in the model — these define the rectangular area for placement.</li>
+            <li>Enter the number of rows and columns in the input window.</li>
+            <li>The tool calculates spacing and places instances evenly within the rectangle.</li>
+        </ul>
+        <div class="note">
+            <strong>Note:</strong> The spacing is automatically computed based on the distance between picked points and the number of instances.
+        </div>
+    </div>
+
+    <hr>
+    <p style="font-size: 0.9em; color: #888;">Author: Evgenii Burlakov | ETools</p>
+</body>
+</html>
