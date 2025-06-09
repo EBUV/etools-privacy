@@ -38,28 +38,26 @@
         <h2><img src="PlaceBetweenPoints.png" class="icon" alt="">Place Between Two Points</h2>
         <p>This tool allows you to place a selected family instance at the midpoint between two picked points in the model.</p>
         <ul>
-            <li>Start the command from the ETools → Placement panel.</li>
-            <li>Select the desired family type in the Revit ribbon or Properties palette.</li>
-            <li>Click on two points in the model. The object will be placed at the exact midpoint.</li>
+            <li>You can either pre-select the object to be copied or launch the command and then select it when prompted.</li>
+            <li>After selecting the source element, pick two points in the model. The new instance will be placed at the midpoint.</li>
             <li>Works with face-based and non-hosted families.</li>
         </ul>
         <div class="note">
-            <strong>Note:</strong> The family must be placeable manually and should not require a host if not face-based.
+            <strong>Note:</strong> The selected object must be a family instance that can be placed manually. Face-based families require a valid face during placement.
         </div>
     </div>
 
     <div class="section">
         <h2><img src="PlaceArrayBetweenTwoPoints.png" class="icon" alt="">Place Array Between Two Points</h2>
-        <p>This tool allows you to create a rectangular array of a selected family between two picked points, defining the number of rows and columns.</p>
+        <p>This tool allows you to create a rectangular array of a selected family instance between two picked points, with a specified number of rows and columns.</p>
         <ul>
-            <li>Start the command from the ETools → Placement panel.</li>
-            <li>Select the desired family type before launching the command.</li>
-            <li>Pick two points in the model — these define the rectangular area for placement.</li>
-            <li>Enter the number of rows and columns in the input window.</li>
-            <li>The tool calculates spacing and places instances evenly within the rectangle.</li>
+            <li>You can pre-select the source object or select it after launching the command.</li>
+            <li>After starting the command, you will be asked to enter the number of rows and columns.</li>
+            <li>Then, pick two points in the model. These define the rectangular area for the array.</li>
+            <li>The tool calculates the spacing and places the copies evenly across the area.</li>
         </ul>
         <div class="note">
-            <strong>Note:</strong> The spacing is automatically computed based on the distance between picked points and the number of instances.
+            <strong>Note:</strong> The original object will not be moved or deleted. Spacing is automatically calculated based on the total area and instance count.
         </div>
     </div>
 
