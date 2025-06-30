@@ -41,6 +41,7 @@
             <li>You can either pre-select the object to be copied or launch the command and then select it when prompted.</li>
             <li>After selecting the source element, pick two points in the model. The new instance will be placed at the midpoint.</li>
             <li>Works with face-based and non-hosted families.</li>
+            <li>Limitations: This plugin only works with Revit FamilyInstance elements that have a valid location point. System elements such as Cable Trays, Ducts, and Pipes are not supported.</li>
         </ul>
         <div class="note">
             <strong>Note:</strong> The selected object must be a family instance that can be placed manually. Face-based families require a valid face during placement.
@@ -55,6 +56,7 @@
             <li>After starting the command, you will be asked to enter the number of rows and columns.</li>
             <li>Then, pick two points in the model. These define the rectangular area for the array.</li>
             <li>The tool calculates the spacing and places the copies evenly across the area, using a margin of x ⁄ 2 from the edges and a distance of x between the elements.</li>
+            <li>Limitations: This plugin only works with Revit FamilyInstance elements that have a valid location point. System elements such as Cable Trays, Ducts, and Pipes are not supported.</li>
         </ul>
         <div class="note">
             <strong>Note:</strong> The original object will not be moved or deleted. Spacing is automatically calculated based on the total area and instance count.
